@@ -25,6 +25,9 @@ body{
 .justify-end{
     justify-content: flex-end;
 }
+.wrap{
+  flex-wrap: wrap;
+}
 .w-full{
     width: 100%;
 }
@@ -170,10 +173,12 @@ body{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #989898;
+    background: #2C3D5F;
+    opacity: 50%;
 }
 
 .slider-dots span.active {
+    opacity: 100%;
     background: #4581FB;
     width: 25px;
     border-radius: 8px;
@@ -306,21 +311,21 @@ body{
         padding-bottom: 30px;
         gap: 18px;
     }
-    .card { 
+    .fashion { 
       position: relative;
       overflow: hidden;
       cursor: pointer;
     }
-    .card img {
+    .fashion img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.4s ease;
     }
-    .card:hover img {
+    .fashion:hover img {
       transform: scale(1.05);
     }
-    .card .text {
+    .fashion .text {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -334,4 +339,101 @@ body{
     }
 
 /*Blog Section CSS*/
-    
+    .section-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .section-title h2 {
+      font-size: 50px;
+      font-weight: 600;
+      color: #2C3D5F;
+    }
+
+    .section-title h2 span {
+      color: #4581FB; 
+    }
+
+    .section-title p {
+      font-size: 24px;
+      color: #2C3D5F;
+      font-weight: 400;
+      margin-top: 8px;
+    }
+
+    .blog-cards {
+      gap: 20px;
+    }
+
+    .card {
+       box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 16px;
+      max-width: 360px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+       border-radius: 6px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 10px;
+      flex-direction: column;
+    }
+
+    .line{
+      border-radius: 7px;
+      width: 34px;
+      height: 2px;
+      background-color: #4581FB;
+      margin: 8px 0px;
+    }
+    .card-body h3 {
+      font-size: 18px;
+      font-weight: 500;
+      color: #2C3D5F;
+    }
+
+    .card-body p {
+      font-size: 14px;
+      letter-spacing: 0.34px;
+      color: #2C3D5F;
+      opacity: 70%;
+      margin-bottom: 16px;
+    }
+
+    .meta {
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2C3D5F;
+  margin-bottom: 15px;
+}
+
+.meta span{
+  display: inline-flex;
+  gap: 8px;
+}
+
+/* icon size */
+.meta img {
+  width: 22px;   
+  height: 22px;
+}
+
+
+    .btn-product {
+      display: inline-block;
+      background: #4581FB;
+      color: #fff;
+      text-align: center;
+      padding: 14px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+    }

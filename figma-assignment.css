@@ -363,6 +363,7 @@ body{
 
     .blog-cards {
       gap: 20px;
+      padding-bottom: 30px;
     }
 
     .card {
@@ -436,4 +437,5 @@ body{
       text-decoration: none;
       font-size: 16px;
       font-weight: 500;
+      padding-bottom: 10px;
     }

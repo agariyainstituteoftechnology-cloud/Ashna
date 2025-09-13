@@ -7,10 +7,10 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-#color{
+.color{
     background-color: #F4F8F9;
 }
-#white{
+.white{
     background-color: #fff;
 }
 .grey{
@@ -147,6 +147,7 @@ body{
 .banner {
     position: relative;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .hero-image {
@@ -250,167 +251,163 @@ body{
 }
 
 /*Best Seller Section CSS*/
-    .section-title {
-      text-align: center;
-      margin: 30px 0;
-    }
-    .section-title h2 {
-      font-size: 50px;
-      font-weight: 600;
-      color: #2C3D5F;
-    }
-    .section-title h2 span {
-      color: #4581FB; 
-    }
-    .section-title p {
-      color: #2C3D5F;
-      font-size: 24px;
-      font-weight: 400;
-      margin-top: 5px;
-    }
-    /* ==== FLEX CONTAINER ==== */
-    .product-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 15px;
-    }
-    /* ==== PRODUCT CARD ==== */
-    .product-card {
-      text-align: center;
-      padding: 15px;
-      border-radius: 10px;
-      /*border: 1px solid #eee;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);*/
-    }
-    /*.product-card:hover {
-      transform: translateY(-5px);
-    }*/
-    .product-card img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
+.section-title {
+  text-align: center;
+  margin: 30px 0;
+}
+.section-title h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #2C3D5F;
+}
+.section-title h2 span {
+  color: #4581FB; 
+}
+.section-title p {
+  color: #2C3D5F;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+/*FLEX CONTAINER*/
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/*PRODUCT CARD*/
+.product-card {
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
-    .product-title {
-      font-size: 16px;
-      margin: 8px 1px;
-      color: #2C3D5F;
-    }
+.product-title {
+  font-size: 16px;
+  margin: 8px 1px;
+  color: #2C3D5F;
+}
 
-    .product-price {
-      font-size: 24px;
-      font-weight: 600;
-      color: #4581FB;
-    }
+.product-price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4581FB;
+}
 
 /*Flex Fashion layout Css*/
-    .layout{
-        margin-top: 30px;
-        padding-top: 60px;
-        padding-bottom: 30px;
-        gap: 18px;
-    }
-    .fashion { 
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-    }
-    .fashion img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.4s ease;
-    }
-    .fashion:hover img {
-      transform: scale(1.05);
-    }
-    .fashion .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(255, 255, 255, 0.9);
-      color: #2C3D5F;
-      font-weight: 500;
-      padding: 15px 31px;
-      border-radius: 15px;
-      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
-    }
+.layout{
+  margin-top: 30px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  gap: 18px;
+}
+.fashion { 
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.fashion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.fashion:hover img {
+  transform: scale(1.05);
+}
+.fashion .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  color: #2C3D5F;
+  font-weight: 500;
+  padding: 15px 31px;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+}
 
 /*Blog Section CSS*/
-    .section-title {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    .section-title h2 {
-      font-size: 50px;
-      font-weight: 600;
-      color: #2C3D5F;
-    }
+.section-title h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #2C3D5F;
+}
 
-    .section-title h2 span {
-      color: #4581FB; 
-    }
+.section-title h2 span {
+   color: #4581FB; 
+}
 
-    .section-title p {
-      font-size: 24px;
-      color: #2C3D5F;
-      font-weight: 400;
-      margin-top: 8px;
-    }
+.section-title p {
+  font-size: 24px;
+  color: #2C3D5F;
+  font-weight: 400;
+  margin-top: 8px;
+}
 
-    .blog-cards {
-      gap: 20px;
-      padding-bottom: 30px;
-    }
+.blog-cards {
+  gap: 20px;
+  padding-bottom: 30px;
+}
 
-    .card {
-       box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 16px;
-      max-width: 360px;
-    }
+.card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 360px;
+}
 
-    .card img {
-      width: 100%;
-      height: 220px;
-       border-radius: 6px;
-      object-fit: cover;
-    }
+.card img {
+  width: 100%;
+  height: 220px;
+  border-radius: 6px;
+  object-fit: cover;
+}
 
-    .card-body {
-      padding: 10px;
-      flex-direction: column;
-    }
+.card-body {
+  padding: 10px;
+  flex-direction: column;
+}
 
-    .line{
-      border-radius: 7px;
-      width: 34px;
-      height: 2px;
-      background-color: #4581FB;
-      margin: 8px 0px;
-    }
-    .card-body h3 {
-      font-size: 18px;
-      font-weight: 500;
-      color: #2C3D5F;
-    }
+.line{
+  border-radius: 7px;
+  width: 34px;
+  height: 2px;
+  background-color: #4581FB;
+  margin: 8px 0px;
+}
+.card-body h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2C3D5F;
+}
 
-    .card-body p {
-      font-size: 14px;
-      letter-spacing: 0.34px;
-      color: #2C3D5F;
-      opacity: 70%;
-      margin-bottom: 16px;
-    }
+.card-body p {
+  font-size: 14px;
+  letter-spacing: 0.34px;
+  color: #2C3D5F;
+  opacity: 70%;
+  margin-bottom: 16px;
+}
 
-    .meta {
+.meta {
   gap: 15px;
   font-size: 16px;
   font-weight: 400;
@@ -429,21 +426,21 @@ body{
   height: 22px;
 }
 
-    .btn-product {
-      display: inline-block;
-      background: #4581FB;
-      color: #fff;
-      text-align: center;
-      padding: 14px 25px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 500;
-      padding-bottom: 10px;
-    }
+.btn-product {
+  display: inline-block;
+  background: #4581FB;
+  color: #fff;
+  text-align: center;
+  padding: 14px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
 
 /*Footer Styling*/
-    .Arrow {
+.Arrow {
   width: 69px;     
   height: 69px;
   background: #4581FB; 
@@ -464,10 +461,10 @@ body{
   flex-basis: 220px; /* minimum preferred width */
 }
 
-
 .space{
   padding-right: 50px;
 }
+
 .footer-top h3 {
   font-size: 18px;
   font-weight: 500;

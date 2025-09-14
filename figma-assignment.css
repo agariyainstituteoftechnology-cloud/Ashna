@@ -339,6 +339,9 @@ body{
 }
 
 /*Blog Section CSS*/
+.blog-section{
+  padding-bottom: 50px;
+}
 .section-title {
   text-align: center;
   margin-bottom: 20px;

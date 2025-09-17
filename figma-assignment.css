@@ -41,7 +41,7 @@ body{
     width: 30%;
 }
 .w-23{
-        width: 23%;
+        width: calc(25% - 20px);
     }
 .w-40{
     width: 40%;
@@ -274,15 +274,11 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  gap: 20px;
 }
 /*PRODUCT CARD*/
 .product-card {
   text-align: center;
-  padding: 15px;
   border-radius: 10px;
   
 }

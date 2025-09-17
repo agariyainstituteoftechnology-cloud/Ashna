@@ -40,9 +40,6 @@ body{
 .w-30{
     width: 30%;
 }
-.w-23{
-        width: calc(25% - 20px);
-    }
 .w-40{
     width: 40%;
 }
@@ -271,21 +268,12 @@ body{
 }
 /*FLEX CONTAINER*/
 .product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
 }
 /*PRODUCT CARD*/
 .product-card {
   text-align: center;
-  border-radius: 10px;
-  
-}
-.product-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+  width: calc((100%/4) - 15px);
 }
 
 .product-title {
@@ -313,8 +301,8 @@ body{
   cursor: pointer;
 }
 .fashion img {
-  width: 100%;
-  height: 100%;
+  width: 413px;
+  height: 413px;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
@@ -369,8 +357,8 @@ body{
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
   background-color: #fff;
   border-radius: 12px;
-  padding: 16px;
-  max-width: 360px;
+  padding: 20px;
+  width: calc((100%/3) - 15px);
 }
 
 .card img {

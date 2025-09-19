@@ -267,13 +267,19 @@ body{
   margin-top: 5px;
 }
 /*FLEX CONTAINER*/
-.product-grid {
+.product-flexbox {
   gap: 20px;
+  justify-content: space-between;
 }
 /*PRODUCT CARD*/
 .product-card {
   text-align: center;
   width: calc((100%/4) - 15px);
+}
+
+.product-card img .product-img{
+  width: 280px;
+  border-radius: 4px;
 }
 
 .product-title {
@@ -293,16 +299,17 @@ body{
   margin-top: 30px;
   padding-top: 60px;
   padding-bottom: 30px;
-  gap: 18px;
+  gap: 20px;
+  
 }
 .fashion { 
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  width: calc((100%/3) - 15px);
 }
 .fashion img {
   width: 413px;
-  height: 413px;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
@@ -362,8 +369,7 @@ body{
 }
 
 .card img {
-  width: 100%;
-  height: 220px;
+  width: 376px;
   border-radius: 6px;
   object-fit: cover;
 }
@@ -410,7 +416,6 @@ body{
 /* icon size */
 .meta img {
   width: 22px;   
-  height: 22px;
 }
 
 .btn-product {
@@ -428,8 +433,8 @@ body{
 
 /*Footer Styling*/
 .Arrow {
-  width: 69px;     
-  height: 69px;
+  width: 69px;
+  height: 69px;     
   background: #4581FB; 
   border-radius: 50%;   
   cursor: pointer;
@@ -510,7 +515,6 @@ body{
 
 .contact-info .contact-items img {
   width: 24px;
-  height: 24px;
   margin-right: 15px;
 }
 
@@ -520,7 +524,6 @@ body{
 
 .social-icons img {
   width: 32px;
-  height: 32px;
 }
 
 /* --- Footer Bottom --- */
@@ -536,10 +539,7 @@ body{
   padding-bottom: 35px;
 }
 .footer-bottom img {
-  
   width: 37px;
-  height: 38px;
-  
 }
 
 .footer-bottom p {
@@ -557,5 +557,4 @@ body{
 
 .payment-methods img {
   width: 62px;
-  height: 42px;
 }

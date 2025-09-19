@@ -89,3 +89,169 @@ body{
     padding: 12px;
 }
 /* Header Complete*/
+
+.product-detail {
+  gap: 40px;
+}
+
+.product-images {
+  gap: 20px;
+}
+
+.thumbs {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.thumbs img {
+  width: 118px;
+  cursor: pointer;
+}
+
+.main-img img {
+  width: 495px;
+}
+
+.sku, .stock {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2C3D5F;
+}
+.sku span, .stock span{
+  color: #2C3D5F;
+  opacity: 50%;
+  padding-left: 62px;
+}
+.stock span{
+  padding-left: 10px;
+}
+
+.title {
+  font-size: 30px;
+  margin: 8px 0 2px;
+  font-weight: 500;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 600;
+  color: #4581FB;
+  margin-bottom: 5px;
+}
+
+.price .tax {
+  font-size: 16px;
+  opacity: 50%;
+  color: #2C3D5F;
+}
+
+.rating {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.rating a {
+  margin-left: 5px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.colors, .sizes {
+  margin: 15px 0;
+}
+
+.colors span, .sizes span {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.color {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.navy { background: #1e3a8a; }
+.blue { background: #3b82f6; }
+.gray { background: #6b7280; }
+.red { background: #ef4444; }
+
+.sizes button {
+  border: 1px solid #ccc;
+  padding: 4px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: white;
+}
+
+.material {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.action-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+/* Pure single box */
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f5f9;   /* wahi halka grey-blue background */
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  min-width: 100px;
+  cursor: pointer;
+}
+
+.quantity span {
+  flex: 1;
+  text-align: center;
+}
+
+/* Add to cart button */
+.add-cart {
+  flex: 1;
+  background: #1e3a8a;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+.terms {
+  margin: 10px 0;
+  font-size: 13px;
+  color: #444;
+}
+
+.buy-now {
+  display: block;
+  background: #3b82f6;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}

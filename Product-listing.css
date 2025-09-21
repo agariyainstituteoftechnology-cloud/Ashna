@@ -157,7 +157,7 @@ body{
 }
 
 .product-card img .product-img{
-  width: 280px;
+  width: 100%;
 }
 
 .product-title {

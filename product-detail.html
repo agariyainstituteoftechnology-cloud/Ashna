@@ -1,105 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="product-detail.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="product-detail.css">
 </head>
 <body>
-    <div class="color">
-    <!--Header-->
-    <header class="main-header">
-      <div class="container">
-        <div class="flex items-center w-full wrapper">
-          <div class="w-20">
-            <img src="images/logo.png" alt="LOGO" />
-          </div>
-          <div class="w-60">
-            <nav>
-              <ul class="flex justify-center">
-                <li class="bold">
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Shop</a>
-                </li>
-                <li>
-                  <a href="#">Men</a>
-                </li>
-                <li>
-                  <a href="#">Women</a>
-                </li>
-                <li>
-                  <a href="#">Kids</a>
-                </li>
-                <li>
-                  <a href="#">Contact US</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="w-20">
-            <div class="flex justify-end icons ">
-              <img src="images/user.png" alt="User Account Icon">
-              <img src="images/search.png" alt="Search Icon">
-              <img src="images/shopping-bag.png" alt="Shopping Bag Icon">
+  <div class="color">
+        <!--Header-->
+        <header class="main-header">
+            <div class="container">
+                <div class="flex items-center w-full wrapper">
+                    <div class="w-20">
+                        <img src="images/logo.png" alt="LOGO" />
+                    </div>
+                    <div class="w-60">
+                        <nav>
+                            <ul class="flex justify-center">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="active">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="#">Men</a>
+                                </li>
+                                <li>
+                                    <a href="#">Women</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kids</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact US</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="w-20">
+                        <div class="flex justify-end icons ">
+                        <img src="images/user.png" alt="User Account Icon">
+                        <img src="images/search.png" alt="Search Icon">
+                        <img src="images/shopping-bag.png" alt="Shopping Bag Icon">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </header>
+        </header>
+    </div>
 
-    <section>
+  <section class="buy-section">
     <div class="container">
     <div class="product-detail flex">
     <!-- Left Side: Images -->
-    <div class="product-images flex">
+    <div class="product-images width-50 flex">
       <div class="thumbs flex">
-        <img src="images/sec-1.png" alt="thumb1">
-        <img src="images/sec-2.png" alt="thumb2">
-        <img src="images/sec-3.png" alt="thumb3">
-        <img src="images/sec-4.png" alt="thumb4">
+        <img src="images/sec-1.png" alt="thumb1" />
+        <img src="images/sec-2.png" alt="thumb2" />
+        <img src="images/sec-3.png" alt="thumb3" />
+        <img src="images/sec-4.png" alt="thumb4" />
       </div>
       <div class="main-img">
-        <img src="images/sec-main.png" alt="Main Product">
+        <img src="images/sec-main.png" alt="Main Product" />
       </div>
     </div>
 
     <!-- Right Side: Product Info -->
-    <div class="product-info">
-      <p class="sku">SKU: <span>2231</span></p>
-      <p class="stock">Availability: <span>1 In Stock</span></p>
+    <div class="product-info width-50">
+      <div class="sku flex">
+        <p>SKU:</p>
+        <span>2231</span>
+      </div>
+
+      <div class="stock flex">
+        <p>Availability:</p>
+        <span>1 In Stock</span>
+      </div>
 
       <h2 class="title">Premier Quality Polo Shirt</h2>
       <p class="price">$385.00</p>
       <p class="tax">Tax Included.</p>
 
-      <div class="rating">
-        <img src="images/3page-rating.png" alt="">
-        <span>(4.0)</span> <a href="#">8 Reviews</a>
+      <div class="rating flex">
+        <img src="images/3page-rating.png" alt="Rating" />
+        <div>
+          <span>(4.0)</span> <a href="#">8 Reviews</a>
+        </div>  
       </div>
 
-      <div class="colors">
-        <span>Colors:</span>
-        <button class="color navy"></button>
-        <button class="color blue"></button>
-        <button class="color gray"></button>
-        <button class="color red"></button>
+      <div class="colors flex">
+        <p>Colors:</p>
+        <div class="gap flex">
+          <button class="color navy"></button>
+          <button class="color blue"></button>
+          <button class="color gray"></button>
+          <button class="color red"></button>
+        </div>  
       </div>
 
-      <div class="sizes">
-        <span>Sizes:</span>
-        <button>20</button>
-        <button>24</button>
+      <div class="sizes flex">
+        <p>Sizes:</p>
+        <span>20,24</span> 
       </div>
-       <p class="material">Material: <strong>100% Polyester</strong></p>
 
-      <div class="action-row">
-  <div class="quantity">
+      <div class="flex material">
+       <p>Material:</p>
+       <strong>100% Polyester</strong>
+      </div> 
+
+      <div class="action-row flex items-center">
+  <div class="quantity flex">
     <span>-</span>
     <span>01</span>
     <span>+</span>
@@ -108,7 +123,8 @@
 </div>
 
       <div class="terms">
-        <input type="checkbox" checked> I Agree With The Terms And Conditions
+        <input type="checkbox" checked> 
+        <label>I Agree With The Terms And Conditions</label>
       </div>
 
       <button class="buy-now">Buy It Now</button>
@@ -116,5 +132,267 @@
     </div>
     </div>
   </section>
+
+  <section class="section">
+  <div class="container">
+    <span class="border"></span>
+    <div class="flex w-full justify-between">
+    <!-- Left Column -->
+    <div class="left-col w-50">
+      <h2>Discriptions</h2>
+      <p>We are proud to present our best premium Shopify theme.</p>
+      <p>This is multi-purpose software that can be used for any type of the store. Great variety of available options will make customization process very easy.</p>
+      <p>Please, take a look at feature list and compare with our competitors.</p>
+      <p>You can buy our theme and start your business online with minimal time investments.</p>
+      <p class="parag">E-Commerce support DropShipping app Oberlo.</p>
+      <p>E-Commerce Shopify theme is powerful tool to create personal webshop.</p>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-col w-50">
+      <div class="review-header flex justify-between items-center">
+        <h2>Reviews</h2>
+        <a href="#">Write A Review</a>
+      </div>
+
+      <!-- Review Item -->
+       <div>
+        <div class="review-card flex">
+          <img src="images/3-page1-ellipse.png" alt="user" class="elipse" />
+          <div class="review-content w-full">
+            <div class="review-top flex justify-between items-center">
+              <div>
+                <h4>Albert Flores</h4>
+                <img src="images/3page-rating.png" alt="Rating" class="rating" />
+              </div>
+              <p class="date">01 day ago</p>
+            </div>
+          </div>
+        </div>
+        <p class="review-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tempor incididunt.</p>
+        <span class="border"></span>
+      </div>
+
+      <!-- Review Item -->
+       <div>
+        <div class="review-card flex">
+          <img src="images/3-page-2ellipse.png" alt="user" class="elipse">
+          <div class="review-content w-full">
+            <div class="review-top flex justify-between items-center">
+              <div>
+                <h4>Albert Flores</h4>
+                <img src="images/3page-rating.png" alt="Rating" class="rating">
+              </div>
+              <p class="date">01 day ago</p>
+            </div>
+          </div>
+        </div>
+        <p class="review-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tempor incididunt.</p>
+        <span class="border"></span>
+      </div>
+
+      <!-- Review Item -->
+       <div>
+        <div class="review-card flex">
+          <img src="images/3page-3ellipse.png" alt="user" class="elipse">
+          <div class="review-content w-full">
+            <div class="review-top flex justify-between items-center">
+              <div>
+                <h4>Albert Flores</h4>
+                <img src="images/3page-rating.png" alt="Rating" class="rating">
+              </div>
+              <p class="date">01 day ago</p>
+            </div>
+          </div>
+        </div>
+        <p class="review-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tempor incididunt.</p>
+      </div>
+    </div>
+  </div>
+  <span class="border"></span>
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+    <div class="seller-section">
+    <div class=" related-product flex">
+      <h2>Related Products</h2>
+      <div class="flex arrow-space">
+        <img src="images/left-arrow-num-section.png" alt="Arrow">
+        <img src="images/right-arrow-num-section.png" alt="Arrow">
+      </div>
+    </div>
+    <div class="product-flexbox flex wrap justify-center">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <img src="images/1-pic.png" alt="Blue Cropped Skinny Jeans" class="product-img">
+            <img src="images/1.png" alt="4 out of 5 stars rating">
+            <p class="product-title">Premier Cropped Skinny Jean</p>
+            <p class="product-price">$385.00</p>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <img src="images/shirt.png" alt="Grey Hoodie Sweatshirt" class="product-img">
+            <img src="images/2.png" alt="5 out of 5 stars rating">
+            <p class="product-title">Premier Cropped Skinny Jean</p>
+            <p class="product-price">$385.00</p>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <img src="images/3-pic.png" alt="Green Casual Shirt" class="product-img">
+            <img src="images/3.png" alt="3 out of 5 stars rating">
+            <p class="product-title">Premier Cropped Skinny Jean</p>
+            <p class="product-price">$385.00</p>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <img src="images/4-pic.png" alt="Blue Polo T-shirt" class="product-img">
+            <img src="images/4.png" alt="4 out of 5 stars rating">
+            <p class="product-title">Premier Cropped Skinny Jean</p>
+            <p class="product-price">$385.00</p>
+          </div>
+          </div>
+  </div>
+</section>
+
+<div class="empty-space">
+  <div class="color"></div>
+</div>
+
+<!--Footer-->
+  <div class="grey">
+    <footer>
+      <div class="container">
+        <!-- Arrow button -->
+        <div class="footer-arrow flex justify-center">
+          <span class="Arrow flex justify-center items-center">
+            <img src="images/Arrow.png" alt="Arrow">
+          </span>
+        </div>
+          <div class="footer-top flex wrap">
+            <!-- About -->
+            <div class="space">
+              <h3>About</h3>
+              <span class="line"></span>
+              <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tempor incididunt.
+              </p>
+            </div>
+
+            <!-- Buy With Us -->
+            <div class="Buy">
+              <h3>Buy With Us</h3>
+              <span class="line"></span>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Services</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQs</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Cookie Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms and Conditions</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Categories -->
+            <div class="items-li">
+              <h3>Categories</h3>
+              <span class="line"></span>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#">Women</a>
+                  </li>
+                  <li>
+                    <a href="#">Men</a>
+                  </li>
+                  <li>
+                    <a href="#">Accessories</a>
+                  </li>
+                  <li>
+                    <a href="#">Shoes</a>
+                  </li>
+                  <li>
+                    <a href="#">New Arrivals</a>
+                  </li>
+                  <li>
+                    <a href="#">Clearence</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="contact-info">
+              <h3>Contact Us</h3>
+              <span class="line"></span>
+              <nav>
+                <ul>
+                  <li class="contact-items flex items-center">
+                    <img src="images/location.png" alt="Location icon">
+                    <a href="https://www.google.com/maps?q=7895+Piermont+Dr+NE+Albuquerque,+NM+198866" target="_blank">
+                      7895 Piermont Dr NE Albuquerque, NM 198866, United States of US.
+                    </a>
+                  </li>
+                  <li class="contact-items flex items-center">
+                    <img src="images/phone-call.png" alt="Phone icon">
+                    <a href="tel:+01234567890">+0 123 456 7890</a>
+                  </li>
+                  <li class="contact-items flex items-center">
+                    <img src="images/envelope.png" alt="Email icon">
+                    <a href="mailto:john.smith@domain.com">john.smith@domain.com</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <!--Social Icons-->
+              <div class="social-icons">
+                <nav>
+                  <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook-logo"></a>
+                  <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter-logo"></a>
+                  <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="Linkedin-logo"></a>
+                  <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram-logo"></a>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom -->
+          <div class="footer-bottom flex items-center wrap">
+            <span class="border"></span>
+            <img src="images/footer-logo.png" alt="Footer-logo">
+            <p>&copy; e-commerce 2022. All Rights Reserved</p>
+            <div class="payment-methods flex items-center">
+              <img src="images/G-Pay.png" alt="GOOGLE Pay">
+              <img src="images/visa.png" alt="Visa">
+              <img src="images/pal-pal.png" alt="PayPal">
+              <img src="images/master-card.png" alt="MasterCard">
+              <img src="images/IPhone-logo.png" alt="ApplePay">
+            </div>
+          </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

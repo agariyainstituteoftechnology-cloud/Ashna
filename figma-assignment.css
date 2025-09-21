@@ -277,8 +277,8 @@ body{
   width: calc((100%/4) - 15px);
 }
 
-.product-card img .product-img{
-  width: 280px;
+.product-card .product-img{
+  width: 100%;
   border-radius: 4px;
 }
 

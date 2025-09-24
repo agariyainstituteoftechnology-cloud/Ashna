@@ -637,13 +637,13 @@ body{
   margin-top: 5px;
   margin-bottom: 10px;
 }
-.colors span{
+/*.colors button{
   display: inline-block;
   margin-right: 10px;
   font-weight: 400;
   font-size: 16px;
   color: #2C3D5F;
-}
+}*/
 .colors .gap{
     gap: 2px;
 }
@@ -666,6 +666,7 @@ body{
 .blue { background: linear-gradient(135deg, #5287A1, #2A6481); }
 .gray { background: linear-gradient(135deg, #3C3F5B, #434878); }
 .red { background: linear-gradient(135deg, #F64C4B, #D42C2B); }
+
 .sizes{
   gap: 60px;
   font-size: 16px;

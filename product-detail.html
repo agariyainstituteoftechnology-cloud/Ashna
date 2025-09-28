@@ -25,7 +25,7 @@
                                     <a href="#">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="active bold">Shop</a>
+                                    <a href="#">Shop</a>
                                 </li>
                                 <li>
                                     <a href="#">Men</a>
@@ -68,6 +68,17 @@
       </div>
       <div class="main-img">
         <img src="images/sec-main.png" alt="Main Product" />
+        <div class="product-icons flex">
+          <button class="search">
+            <img src="images/boy-image-icon.png" alt="zoom">
+          </button>
+        </div>
+        <button class="arrow-icon flex items-center justify-center left">
+          <img src="images/left-arrow-num-section.png" alt="Previous">
+        </button>
+        <button class="arrow-icon flex items-center justify-center right">
+          <img src="images/boy-rightArrow.png" alt="Next">
+        </button>
       </div>
     </div>
 
@@ -94,10 +105,10 @@
         </div>  
       </div>
 
-      <div class="colors flex">
-        <p>Colors:</p>
-        <div class="gap flex">
-          <button class="color navy"></button>
+      <div class="colors flex items-center">
+        <p class="info-line ">Colors:</p>
+        <div class="colors-option flex items-center gap">
+          <button class="color navy selected"></button>
           <button class="color blue"></button>
           <button class="color gray"></button>
           <button class="color red"></button>
@@ -222,7 +233,7 @@
 <section>
   <div class="container">
     <div class="seller-section">
-    <div class=" related-product flex">
+    <div class=" related-product flex justify-between items-center">
       <h2>Related Products</h2>
       <div class="flex arrow-space">
         <img src="images/left-arrow-num-section.png" alt="Arrow">

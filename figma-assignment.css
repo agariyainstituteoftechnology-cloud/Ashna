@@ -1,4 +1,4 @@
-/*Global Css Start*/
+/*--Global Css Start--*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -71,6 +71,10 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
+:root{
+  --themecolor:#4581FB;
+  --fontcolor:#2C3D5F;
+}
 /*Global Css End*/
 
 /*Header Css*/
@@ -101,7 +105,7 @@ body{
     text-decoration: none;
 }
 .main-header nav ul li a.active{
-    color: #4581FB;
+    color: var(--themecolor);
     position: relative;
 }
 .main-header nav ul li a.active:after{
@@ -138,22 +142,22 @@ body{
     line-height: 1.2;
     margin-bottom: 20px;
     font-weight: 600;
-    color: #2C3D5F;
+    color: var(--fontcolor);
 }
 
 .hero-content h1 span {
-    color: #4581FB; /* Blue */
+    color: var(--themecolor); /* Blue */
 }
 
 .hero-content p {
-    color: #2C3D5F;
+    color: var(--fontcolor);
     font-size: 16px;
     margin-bottom: 30px;
 }
 
 .btn {
     display: inline-block;
-    background: #4581FB;
+    background: var(--themecolor);
     color: #fff;
     font-weight: 500;
     padding: 17px 32px;
@@ -194,13 +198,13 @@ body{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #2C3D5F;
+    background: var(--fontcolor);
     opacity: 50%;
 }
 
 .slider-dots span.active {
     opacity: 100%;
-    background: #4581FB;
+    background: var(--themecolor);
     width: 25px;
     border-radius: 8px;
 }
@@ -278,7 +282,7 @@ body{
   color: #2C3D5F;
 }
 .section-title h2 span {
-  color: #4581FB; 
+  color: var(--themecolor); 
 }
 .section-title p {
   color: #2C3D5F;
@@ -302,21 +306,24 @@ body{
   position: relative;
   border-radius: 7px;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .prd-img-wrap:hover .options{
   opacity: 1;
-  right: 0;
 }
 .options{
   position: absolute;
-  inset: 0;
-  right: -900px;
+  top: 0;
+  left: 0;
+  width: 100%; /*image jitna hover*/
+  height: 100%;
   background: rgba(0,0,0,0.6);
   flex-direction: column;
   align-items: flex-end;
-  gap: 10px;
+  gap: 15px;
   padding: 20px;
+  gap: 8px;  /*icons ka beech ma gap*/
   opacity: 0;
   transition: 0.3s ease all;
 }
@@ -324,18 +331,21 @@ body{
   background: transparent;
   border: none;
   margin-right: 5px;
+  cursor: pointer;
 }
 .options .cart{
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background: #4581FB;
+  background: var(--themecolor);
   border: 2px solid #fff;
+  cursor: pointer;
 }
 .prd-img{
   width: 100%;
-  margin-bottom: 10px;
+  display: block;
 }
+
 .product-card .rating{
   width: 107px;
   display: block;
@@ -343,7 +353,7 @@ body{
 .product-title {
   font-size: 16px;
   margin-bottom: 6px;
-  color: #2C3D5F;
+  color: var(--fontcolor);
 }
 
 .product-price {
@@ -403,12 +413,12 @@ body{
 }
 
 .section-title h2 span {
-   color: #4581FB; 
+   color: var(--themecolor); 
 }
 
 .section-title p {
   font-size: 24px;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   font-weight: 400;
   margin-top: 8px;
 }
@@ -441,19 +451,19 @@ body{
   border-radius: 7px;
   width: 34px;
   height: 2px;
-  background-color: #4581FB;
+  background-color: var(--themecolor);
   margin: 8px 0px;
 }
 .card-body h3 {
   font-size: 18px;
   font-weight: 500;
-  color: #2C3D5F;
+  color: var(--fontcolor);
 }
 
 .card-body p {
   font-size: 14px;
   letter-spacing: 0.34px;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   opacity: 70%;
   margin-bottom: 16px;
 }
@@ -462,7 +472,7 @@ body{
   gap: 15px;
   font-size: 16px;
   font-weight: 400;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   margin-bottom: 15px;
 }
 
@@ -478,7 +488,7 @@ body{
 
 .btn-product {
   display: inline-block;
-  background: #4581FB;
+  background: var(--themecolor);
   color: #fff;
   text-align: center;
   padding: 14px 25px;
@@ -513,7 +523,7 @@ body{
 }
  .filter-bar p{
     font-size: 16px;
-    color: #2C3D5F;
+    color: var(--fontcolor);
     font-weight: 400;
 }
 .filter-bar .right-part img{
@@ -533,7 +543,7 @@ body{
     font-size: 16px;
 }
 .pagination .bold{
-    background-color: #4581FB;
+    background-color: var(--themecolor);
     color: #fff;
     width: 34px;
     height: 34px;
@@ -571,18 +581,68 @@ body{
 
 .thumbs img {
   width: 118px;
+  display: block;
   cursor: pointer;
 }
 
+.main-img{
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+}
 .main-img img {
   width: 495px;
-  height: auto;
+  margin: auto;
+  height: auto; /*streach na ho*/
   display: block;
 }
+/*image icon css*/
+.product-icons{
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+.product-icons .search{
+  overflow: hidden;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+}
+.product-icons .search img{
+  width: 18px;
+  height: 18px;
+}
+.arrow-icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 0;
+}
+.arrow-icon.left{
+  left: 15px;
+  background: #fff;
+}
+.arrow-icon.right{
+  right: 15px;
+  background: var(--themecolor);
+}
+.arrow-icon img{
+  width: 18px;
+}
+/*image icons css end*/
+
 .sku, .stock {
   font-size: 16px;
   font-weight: 400;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   margin-bottom: 10px;
 }
 .sku span, .stock span{
@@ -605,14 +665,14 @@ body{
 .price {
   font-size: 30px;
   font-weight: 600;
-  color: #4581FB;
+  color: var(--themecolor);
   margin-bottom: 6px;
 }
 
 .product-info .tax {
   font-size: 16px;
   opacity: 50%;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   margin-bottom: 18px;
 }
 
@@ -635,33 +695,39 @@ body{
 .colors{
   gap: 45px;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
-/*.colors button{
-  display: inline-block;
-  margin-right: 10px;
-  font-weight: 400;
-  font-size: 16px;
-  color: #2C3D5F;
-}*/
 .colors .gap{
-    gap: 2px;
+    gap: 14px;
+}
+
+.colors-options { 
+  gap: 10px;
+  overflow: visible;   
 }
 .colors .color {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: none;
-  margin-right: 8px;
+  display: inline-block;
+  position: relative;
   cursor: pointer;
+  border: none; /* extra border hatane ke liye */
+  outline: none; /* outline bhi remove */
 }
-.colors .navy{
-  width: 32px;
-  height: 32px;
-  border: 2px solid #4581FB; 
-  padding: 2px;     
-  background-clip: content-box; 
+
+.colors .color.selected::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(24px + 8px);
+  height: calc(24px + 8px);
+  border-radius: 50%;
+  border: 2px solid var(--themecolor);
 }
+
 .navy { background: linear-gradient(135deg, #1F1D22, #4C4B4E); }
 .blue { background: linear-gradient(135deg, #5287A1, #2A6481); }
 .gray { background: linear-gradient(135deg, #3C3F5B, #434878); }
@@ -671,7 +737,7 @@ body{
   gap: 60px;
   font-size: 16px;
   font-weight: 400;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   margin-bottom: 20px;
 }
 
@@ -682,7 +748,7 @@ body{
 .material {
   margin: 8px 0;
   font-size: 16px;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   font-weight: 400;
   gap: 40px;
   margin-bottom: 16px;
@@ -706,7 +772,7 @@ body{
   padding: 10px 8px;
   font-size: 18px;
   font-weight: 400;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   cursor: pointer;
   margin-bottom: 14px;
 }
@@ -733,7 +799,7 @@ body{
 .terms {
   margin: 14px 0;
   font-size: 16px;
-  color: #2C3D5F;
+  color: var(--fontcolor);
 }
 
 .terms label{
@@ -742,7 +808,7 @@ body{
 }
 
 .buy-now {
-  background: #4581FB;
+  background: var(--themecolor);
   color: white;
   padding: 14px 25px;
   border: none;
@@ -763,7 +829,7 @@ body{
 }
 
 .left-col h2, .right-col h2 {
-  color: #2C3D5F;
+  color: var(--fontcolor);
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 25px;
@@ -771,7 +837,7 @@ body{
 
 .left-col p {
   margin-bottom: 35px;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   font-size: 16px;
   font-weight: 400;
   opacity: 70%;
@@ -785,7 +851,7 @@ body{
 
 /* Review Section */
 .review-header a {
-  color: #4581FB;
+  color: var(--themecolor);
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
@@ -804,7 +870,7 @@ body{
 .review-top h4 {
   font-size: 16px;
   font-weight: 500;
-  color: #2C3D5F;
+  color: var(--fontcolor);
 }
 
 .review-top .rating {
@@ -814,13 +880,13 @@ body{
 
 .review-top .date {
   font-size: 16px;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   opacity: 50%;
 }
 
 .review-text {
   font-size: 16px;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   opacity: 70%;
   line-height: 24px;
   font-weight: 400;
@@ -843,7 +909,6 @@ body{
 }
 
 .related-product{
-  gap: 1000px;
   margin-bottom: 35px;
 }
 .related-product img{
@@ -853,7 +918,7 @@ body{
 .related-product h2{
   font-size: 24px;
   font-weight: 600;
-  color: #2C3D5F;
+  color: var(--fontcolor);
 }
 .arrow-space{
   gap: 15px;
@@ -870,7 +935,7 @@ body{
 .Arrow {
   width: 69px;
   height: 69px;     
-  background: #4581FB; 
+  background: var(--themecolor); 
   border-radius: 50%;   
   cursor: pointer;
 }
@@ -896,21 +961,21 @@ body{
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 8px;
-  color: #2C3D5F;
+  color: var(--fontcolor);
 }
 
 .footer-top .line {
   display: block;
   width: 34px;
   height: 2px;
-  background: #4581FB;
+  background: var(--themecolor);
   margin-bottom: 15px;
 }
 
 .footer-top p {
   font-size: 16px;
   font-weight: 400;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   line-height:30px;
   letter-spacing: 0.34px;
   opacity: 70%;
@@ -931,7 +996,7 @@ body{
   font-size: 16px;
   opacity: 70%;
   line-height: 40px;
-  color: #2C3D5F;
+  color: var(--fontcolor);
 }
 
 /* --- Contact Info --- */
@@ -941,7 +1006,7 @@ body{
   opacity: 70%;
   line-height: 24px;
   margin: 0;
-  color: #2C3D5F;
+  color: var(--fontcolor);
 }
 
 .contact-items{
@@ -980,7 +1045,7 @@ body{
 .footer-bottom p {
   padding-left: 10px;
   font-size: 16px;
-  color: #2C3D5F;
+  color: var(--fontcolor);
   opacity: 70%;
 }
 

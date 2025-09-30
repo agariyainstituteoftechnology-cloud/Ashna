@@ -63,16 +63,21 @@
               <p>Top Products Of This Week</p>
           </div>
 
-          <div class="filter-bar flex">
+          <div class="filter-bar flex justify-between items-center">
             <div class="left-part flex items-center">
               <p>Filter By</p>
               <img src="images/slider.png" alt="Slider">
-            </div>
-            <div class="right-part flex items-center">
-              <p>Features</p>
-              <img src="images/v-shape-vector.png" alt="Vector">
+
+              <label for="features">
+                <select>
+                  <option>Features</option>
+                  <option>New</option>
+                  <option>Popular</option>
+                </select>
+              </label>
             </div>
           </div>
+          
           <div class="product-flexbox flex wrap">
             <!-- Product 1 -->
             <div class="product-card">

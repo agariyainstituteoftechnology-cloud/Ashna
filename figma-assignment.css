@@ -70,6 +70,7 @@ body{
 .container{
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 :root{
   --themecolor:#4581FB;
@@ -1057,4 +1058,18 @@ body{
 
 .payment-methods img {
   width: 62px;
+}
+
+/*Responsiveness Start*/
+@media(max-width: 1024px){  /*landscape tablet big size tablet*/
+
+}
+@media(max-width: 992px){  /*normal screen*/
+
+}
+@media(max-width: 768px){  /*android tablet or ipad mini screen*/
+
+}
+@media(max-width: 620px){  
+
 }

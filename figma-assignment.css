@@ -319,7 +319,7 @@ body{
 .options{
   position: absolute;
   inset: 0;
-  right: -999px;
+  right: -900px;
   background: rgba(0,0,0,0.6);
   flex-direction: column;
   align-items: flex-end;
@@ -1099,6 +1099,9 @@ body{
   .hero-image{
     position: relative;
   }
+  .btn{
+    margin-bottom: 22px;
+  }
   .cat-grid{
     grid-auto-rows: 200px;
     grid-template-areas: 
@@ -1137,8 +1140,17 @@ body{
   .card{
     width: 100%;
   }
+  .layout{
+    padding-bottom: 20px;
+  }
   .section-title h2{
     font-size: 40px;
+  }
+  .section-title p{
+    font-size: 19px;
+  }
+  .section-title{
+     margin: 0px 0 20px;
   }
   .footer-top > div{
   flex-basis: 100%;

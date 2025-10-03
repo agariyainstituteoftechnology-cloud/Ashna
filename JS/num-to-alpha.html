@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function numberToWords(num) {           /*aek function banaya gaya ha jo number ko words me convert karega.*/
+    var ones = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+        "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen",
+        "sixteen", "seventeen", "eighteen", "nineteen"];     /*0 se 19 tak ke words.*/
+    var tens = ["", "", "twenty", "thirty", "forty", "fifty",
+        "sixty", "seventy", "eighty", "ninety"];    /*20, 30, 40... 90 tak ke words.*/
+    var thousands = ["", "thousand", "million", "billion", "trillion"];  /*1000 1000000 tak ka words*/ 
+
+    // Base case
+    if (num === 0) return "zero";        /*Agar user ne 0 diya ho to seedha "zero" return kar do.*/
+
+    function convert(n) {
+        var words = "";
+
+        if (n < 20) {
+            words = ones[n];
+        } else if (n < 100) {
+            words = tens[Math.floor(n / 10)];
+            if (n % 10 > 0) words += "-" + ones[n % 10]; /*Agar last digit 0 hai kuch add nahi karna .Agar last digit 0 se bada hai → uska word bhi add karna hai*/
+        } else if (n < 1000) {
+            words = convert(Math.floor(n / 100)) + " hundred";
+            if (n % 100 > 0) words += " and " + convert(n % 100);
+        }
+        return words;
+    }
+
+    // Recursive for larger numbers
+    var word = "";
+    var i = 0;
+    while (num > 0) {
+        var chunk = num % 1000;  // 3-digit block
+        if (chunk > 0) {
+            word = convert(chunk) + " " + thousands[i] + " " + word;
+        }
+        num = Math.floor(num / 1000);
+        i++;
+    }
+
+    return word.trim();
+}
+
+// ---- User input ----
+var input = prompt("Enter any number:");
+var number = parseInt(input);
+
+if (!isNaN(number)) {
+    console.log("Number in words:", numberToWords(number));
+} else {
+    console.log("Please enter a valid number");
+}
+
+
+    </script>
+</head>
+<body>
+    

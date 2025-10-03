@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number to Words</title>
+</head>
+<body>
+<script>
+function numberToWords(num) {
+    const ones = ["zero","one","two","three","four","five","six","seven","eight","nine",
+                  "ten","eleven","twelve","thirteen","fourteen","fifteen",
+                  "sixteen","seventeen","eighteen","nineteen"];
+    const tens = ["","","twenty","thirty","forty","fifty",
+                  "sixty","seventy","eighty","ninety"];
+
+    // 0 - 19
+    if (num < 20) return ones[num];
+
+    // 20 - 99
+    if (num < 100) {
+        let remainder = num % 10;
+        return tens[Math.floor(num / 10)] + (remainder !== 0 ? "-" + ones[remainder] : "");
+    }
+
+    // 100 - 999
+    if (num < 1000) {
+        let remainder = num % 100;
+        return ones[Math.floor(num / 100)] + " hundred" + 
+               (remainder !== 0 ? " and " + numberToWords(remainder) : "");
+    }
+
+    // 1000 - 9999
+    if (num < 10000) {
+        let remainder = num % 1000;
+        return numberToWords(Math.floor(num / 1000)) + " thousand" +
+               (remainder !== 0 ? " " + numberToWords(remainder) : "");
+    }
+
+    // 10,000 - 99,999
+    if (num < 100000) {
+        let remainder = num % 1000;
+        return numberToWords(Math.floor(num / 1000)) + " thousand" +
+               (remainder !== 0 ? " " + numberToWords(remainder) : "");  //yahan par function khud ko 4 baar call karea ga
+    }
+
+    //100000 - 9999999
+    if (num < 10000000) {
+        let remainder = num % 100000;
+        return numberToWords(Math.floor(num / 100000)) + " lac" +
+               (remainder !== 0 ? " " + numberToWords(remainder) : "");  //yahan par function khud ko 4 baar call karea ga
+    }
+
+    //100000 - 999999999
+    if (num < 1000000000) {
+        let remainder = num % 10000000;
+        return numberToWords(Math.floor(num / 10000000)) + " crore" +
+               (remainder !== 0 ? " " + numberToWords(remainder) : "");  //yahan par function khud ko 4 baar call karea ga
+    }
+
+    return "Number too big (please enter below 100 crore)";
+}
+
+// Input from user
+var number = +prompt("Enter a number (0 - 999999999):");
+console.log(numberToWords(number));
+</script>
+</body>
+</html>

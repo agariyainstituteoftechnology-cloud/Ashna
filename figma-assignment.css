@@ -135,7 +135,8 @@ body{
 }
 
 .hero-content {
-    max-width: 40%;
+    max-width: 490px;
+    width: 100%;
 }
 
 .hero-content h1 {
@@ -180,7 +181,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 50%;
+    max-width: 756px;
+    width: 100%;
 }
 
 .hero-image img {
@@ -377,7 +379,7 @@ body{
   width: calc((100%/3) - 15px);
 }
 .fashion img {
-  width: 413px;
+  width: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
@@ -395,6 +397,7 @@ body{
   padding: 15px 31px;
   border-radius: 15px;
   box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+  text-align: center;
 }
 
 /*Blog Section CSS*/
@@ -437,7 +440,7 @@ body{
 }
 
 .card img {
-  width: 376px;
+  width: 100%;
   border-radius: 6px;
   object-fit: cover;
 }
@@ -479,6 +482,7 @@ body{
 .meta span{
   display: inline-flex;
   gap: 8px;
+  align-items: center;
 }
 
 /* icon size */
@@ -1060,15 +1064,91 @@ body{
   width: 62px;
 }
 
+.mob-menu-icon{
+  display: none;
+  margin-right: 20px;
+}
+
+.mob-menu-icon svg{
+  width: 20px;
+}
+
 /*Responsiveness Start*/
-@media(max-width: 1024px){  /*landscape tablet big size tablet*/
+@media(max-width: 1024px){   /*landscape tablet or big size tablet*/
+  .hero-content h1 {
+    font-size: 62px;
+  }
+  .cat-grid{
+    grid-auto-rows: 200px;
+  }
+  .meta span{
+    font-size: 14px;
+  }
 
 }
-@media(max-width: 992px){  /*normal screen*/
-
+@media(max-width: 992px){  /*normal tablets screen*/
+  .mob-menu-icon{
+    display: block;
+  }
+  .header-nav{
+    display: none;
+  }
+  .hero{
+    flex-direction: column;
+  }
+  .hero-image{
+    position: relative;
+  }
+  .cat-grid{
+    grid-auto-rows: 200px;
+    grid-template-areas: 
+      "sale women"
+      "new women"
+      "men accessories"
+      "shoes shoes";
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-title{
+    font-size: 14px;
+  }
+  .product-price{
+    font-size: 18px;
+  }
+.fashion .text{
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.card{
+  width: calc(50% - 10px);
+}
+.footer-top{
+  gap: 30px;
+}
+.footer-top > div{
+  flex-basis: calc(50% - 15px);
+  padding: 0;
+} 
 }
 @media(max-width: 768px){  /*android tablet or ipad mini screen*/
-
+  .product-card{
+    width: calc((100% / 2) - 15px);
+  }
+  .card{
+    width: 100%;
+  }
+  .section-title h2{
+    font-size: 40px;
+  }
+  .footer-top > div{
+  flex-basis: 100%;
+  }
+  .fashion{
+    width: calc((100% / 1) - 15px);
+  }
+  .btn{
+    margin-bottom: 10px;
+  }
 }
 @media(max-width: 620px){  
 

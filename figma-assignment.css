@@ -585,7 +585,7 @@ body{
 }
 
 .thumbs img {
-  width: 118px;
+  width: 100%;
   display: block;
   cursor: pointer;
 }
@@ -596,7 +596,7 @@ body{
   text-align: center;
 }
 .main-img img {
-  width: 495px;
+  width: 100%;
   margin: auto;
   height: auto; /*streach na ho*/
   display: block;
@@ -648,7 +648,7 @@ body{
   font-size: 16px;
   font-weight: 400;
   color: var(--fontcolor);
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .sku span, .stock span{
   opacity: 50%;
@@ -663,7 +663,7 @@ body{
 
 .title {
   font-size: 30px;
-  margin: 12px 0;
+  margin: 8px 0;
   font-weight: 500;
 }
 
@@ -671,20 +671,20 @@ body{
   font-size: 30px;
   font-weight: 600;
   color: var(--themecolor);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .product-info .tax {
   font-size: 16px;
   opacity: 50%;
   color: var(--fontcolor);
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .rating {
   margin-top: 10px;
   gap: 20px;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
 }
 .rating img{
     width: 107px;
@@ -743,7 +743,7 @@ body{
   font-size: 16px;
   font-weight: 400;
   color: var(--fontcolor);
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .sizes span{
@@ -895,8 +895,7 @@ body{
   opacity: 70%;
   line-height: 24px;
   font-weight: 400;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .border {
@@ -1084,8 +1083,8 @@ body{
   .meta span{
     font-size: 14px;
   }
-
 }
+
 @media(max-width: 992px){  /*normal tablets screen*/
   .mob-menu-icon{
     display: block;
@@ -1133,6 +1132,7 @@ body{
   padding: 0;
 } 
 }
+
 @media(max-width: 768px){  /*android tablet or ipad mini screen*/
   .product-card{
     width: calc((100% / 2) - 15px);
@@ -1163,5 +1163,13 @@ body{
   }
 }
 @media(max-width: 620px){  
+
+}
+
+@media(max-width: 480px){  
+  .pagination {
+    padding: 45px;
+    gap: 28px;
+  }
 
 }

@@ -586,6 +586,7 @@ body{
 
 .thumbs img {
   width: 100%;
+  height: auto;
   display: block;
   cursor: pointer;
 }
@@ -1086,6 +1087,39 @@ body{
     font-size: 12px;
     line-height: 21px;
   }
+
+  /*boy section*/
+  .product-detail{
+    flex-direction: column;
+    align-items: center;
+  }
+  /*.main-img {
+    max-width: 450px;
+    margin-bottom: 20px;
+  }*/
+  .thumbs{
+  gap: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.thumbs img{
+  width: 100px;
+}
+.product-images{
+  display: flex;
+  flex-direction: column;
+}
+  .product-detail{
+    gap: 30px;
+  }
+  .product-info{
+    width: 100%;
+  }
+  .buy-now{
+    width: 100%;
+    max-width: 500px;
+  }
 }
 
 @media(max-width: 992px){  /*normal tablets screen*/
@@ -1127,6 +1161,20 @@ body{
 .card{
   width: calc(50% - 10px);
 }
+
+/*boy section*/
+.thumbs{
+  gap: 16px;
+}
+
+.review-item p{
+  font-size: 14px;
+}
+.description p{
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 27px;
+}
 .footer-top{
   gap: 30px;
 }
@@ -1164,11 +1212,81 @@ body{
   .btn{
     margin-bottom: 10px;
   }
+  .review-time{
+    font-size: 15px;
+  }
+  .review-item p{
+  margin-top: 10px;
+}
+
+/*boy section*/
+.thumbs{
+  gap: 13px;
+  display: flex;
+  flex-direction: row;
+}
+.thumbs img{
+  width: 84px;
+}
+.product-images{
+  display: flex;
+  flex-direction: column;
+}
+.title , .price{
+  font-size: 29px;
+}
 }
 @media(max-width: 620px){  
-
+.thumbs{
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
 }
-
+.thumbs img{
+  width: 68px;
+}
+.product-images{
+  display: flex;
+  flex-direction: column;
+}
+.product-detail{
+  gap: 12px;
+}
+.title{
+  font-size: 23px;
+}
+.price{
+  font-size: 26px;
+}
+.arrow-icon{
+  width: 35px;
+  height: 35px;
+}
+.arrow-icon img{
+  width: 14px;
+}
+.product-icons .search{
+  width: 35px;
+  height: 35px;
+}
+.product-icons .search img {
+  width: 14px;
+  height: 14px;
+}
+.terms label{
+  font-size: 14px;
+}
+.quantity{
+  padding: 7px 8px;
+}
+}
+.add-cart{
+  padding: 10px 28px;
+  font-size: 15px;
+}
+.buy-now{
+  padding: 12px 25px;
+}
 @media(max-width: 480px){  
   .pagination {
     padding: 45px;

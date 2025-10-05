@@ -825,87 +825,82 @@ body{
   margin-top: 12px;
 }
 
-
-
-/*Review Section*/
-.section {
-  padding: 40px 0 2px;
-  gap: 4%;
-}
-
-.left-col h2, .right-col h2 {
+/* ==== Description ==== */
+.description h2 {
   color: var(--fontcolor);
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-.left-col p {
-  margin-bottom: 35px;
+.description p {
+  margin-bottom: 30px;
   color: var(--fontcolor);
   font-size: 16px;
   font-weight: 400;
-  opacity: 70%;
+  opacity: 0.7;
   letter-spacing: 0.34px;
   line-height: 30px;
 }
-
-.left-col .parag {
-  margin-bottom: 0px;
+.description p.parag{
+  margin-bottom: 0;
 }
-
-/* Review Section */
-.review-header a {
+/* ==== Reviews ==== */
+.reviews h2 {
+  color: var(--fontcolor);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.write-review {
+  font-size: 16px;
   color: var(--themecolor);
-  font-size: 16px;
-  font-weight: 500;
   text-decoration: none;
+  font-weight: 500;
 }
-
-.review-card {
-  gap: 15px;
+.review-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
 }
-
-.review-card .elipse {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-}
-
-.review-top h4 {
+.review-item h4 {
   font-size: 16px;
   font-weight: 500;
   color: var(--fontcolor);
+  margin-bottom: 5px;
+  margin-left: 10px;
 }
-
-.review-top .rating {
-  width: 107px;
-  margin-top: 2px;
+.review-item img.color {
+  width: 107px; 
+  display: block;
+  margin-left: 10px;
+  background-color: transparent;
 }
-
-.review-top .date {
+.review-item p {
   font-size: 16px;
   color: var(--fontcolor);
-  opacity: 50%;
-}
-
-.review-text {
-  font-size: 16px;
-  color: var(--fontcolor);
-  opacity: 70%;
+  opacity: 0.7;
   line-height: 24px;
   font-weight: 400;
-  margin-top: 5px;
+  margin-top: 15px;
+}
+.review-item:last-child {
+  border-bottom: none;
+}
+.review-time {
+  font-size: 16px;
+  color: var(--fontcolor);
+  opacity: 0.5;
+  margin-left: auto; 
+}
+.desc-reviews {
+  margin: 40px auto;
+  padding: 20px;
+  border-top: 1px solid #ddd; 
+  border-bottom: 1px solid #ddd;
+  gap: 40px; 
 }
 
-.border {
-  background-color: #243D4C;
-  opacity: 20%;
-  height: 1px;
-  width: 100%;   
-  margin: 30px 0;
-  display: block;
-}
 
 /*Related Poduct Section*/
 .seller-section{
@@ -1082,6 +1077,14 @@ body{
   }
   .meta span{
     font-size: 14px;
+  }
+  .left-col p{
+    font-size: 15px;
+    margin-bottom: 31px;
+  }
+  .review-text{
+    font-size: 12px;
+    line-height: 21px;
   }
 }
 

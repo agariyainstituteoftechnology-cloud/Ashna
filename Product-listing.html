@@ -1,57 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Listing</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="figma-assignment.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="figma-assignment.css" />
+  </head>
+  <body>
     <div class="color">
-        <!--Header-->
-        <header class="main-header">
-            <div class="container">
-                <div class="flex items-center w-full wrapper">
-                    <div class="w-20">
-                        <img src="images/logo.png" alt="LOGO" />
-                    </div>
-                    <div class="w-60">
-                        <nav>
-                            <ul class="flex justify-center">
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="active bold">Shop</a>
-                                </li>
-                                <li>
-                                    <a href="#">Men</a>
-                                </li>
-                                <li>
-                                    <a href="#">Women</a>
-                                </li>
-                                <li>
-                                    <a href="#">Kids</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact US</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="w-20">
-                        <div class="flex justify-end icons ">
-                          <img src="images/user.png" alt="User Account Icon">
-                          <img src="images/search.png" alt="Search Icon">
-                          <img src="images/shopping-bag.png" alt="Shopping Bag Icon">
-                        </div>
-                    </div>
-                </div>
+      <!--Header-->
+      <header class="main-header">
+        <div class="container">
+          <div class="flex items-center w-full wrapper">
+            <!--Logo-->
+            <div class="mob-menu-icon">
+              <svg
+                aria-hidden="true"
+                role="presentation"
+                class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar"
+                viewBox="0 0 1000 1000"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"
+                ></path>
+              </svg>
             </div>
-        </header>
+            <div class="w-20">
+              <img src="images/logo.png" alt="LOGO" />
+            </div>
+
+            <!--Navigation-->
+            <div class="w-60">
+              <nav class="header-nav">
+                <ul class="flex justify-center">
+                  <li>
+                    <a href="#" class="bold active">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Shop</a>
+                  </li>
+                  <li>
+                    <a href="#">Men</a>
+                  </li>
+                  <li>
+                    <a href="#">Women</a>
+                  </li>
+                  <li>
+                    <a href="#">Kids</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact US</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!--Icons-->
+            <div class="w-20">
+              <div class="flex justify-end icons">
+                <img src="images/user.png" alt="User Account Icon" />
+                <img src="images/search.png" alt="Search Icon" />
+                <img src="images/shopping-bag.png" alt="Shopping Bag Icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
     </div>
 
     <div class="white">
@@ -59,275 +79,378 @@
       <section class="Best-products">
         <div class="container">
           <div class="section-title">
-              <h2><span>Best</span> Products</h2>
-              <p>Top Products Of This Week</p>
+            <h2><span>Best</span> Products</h2>
+            <p>Top Products Of This Week</p>
           </div>
 
           <div class="filter-bar flex">
             <div class="left-part flex items-center">
               <p>Filter By</p>
-              <img src="images/slider.png" alt="Slider">
+              <img src="images/slider.png" alt="Slider" />
             </div>
             <div class="right-part flex items-center">
               <p>Features</p>
-              <img src="images/v-shape-vector.png" alt="Vector">
+              <img src="images/v-shape-vector.png" alt="Vector" />
             </div>
           </div>
           <div class="product-flexbox flex wrap">
             <!-- Product 1 -->
             <div class="product-card">
               <div class="prd-img-wrap">
-                <img src="images/1-pic.png" alt="Blue Cropped Skinny Jeans" class="prd-img">
-                  <div class="options flex">
-                    <button class="search">
-                      <img src="images/icon-search.png" alt="Search"/>
-                    </button>
-                    <button class="cart flex items-center justify-center">
-                      <img src="images/cart.png" alt="Cart" />
-                    </button>
-                  </div>
+                <img
+                  src="images/1-pic.png"
+                  alt="Blue Cropped Skinny Jeans"
+                  class="prd-img"
+                />
+                <div class="options flex">
+                  <button class="search">
+                    <img src="images/icon-search.png" alt="Search" />
+                  </button>
+                  <button class="cart flex items-center justify-center">
+                    <img src="images/cart.png" alt="Cart" />
+                  </button>
+                </div>
               </div>
-              <img src="images/1.png" alt="4 out of 5 stars rating" class="star-img">
+              <img
+                src="images/1.png"
+                alt="4 out of 5 stars rating"
+                class="star-img"
+              />
               <p class="product-title">Premier Cropped Skinny Jean</p>
               <p class="product-price">$385.00</p>
             </div>
-                  
-                  <!-- Product 2 -->
-                  <div class="product-card">
-                    <div class="prd-img-wrap">
-                      <img src="images/shirt.png" alt="Grey Hoodie Sweatshirt" class="prd-img">
-                      <div class="options flex">
-                        <button class="search">
-                          <img src="images/icon-search.png" alt="Search"/>
-                        </button>
-                        <button class="cart flex items-center justify-center">
-                          <img src="images/cart.png" alt="Cart" />
-                        </button>
-                      </div>
-                    </div>
-                      <img src="images/2.png" alt="5 out of 5 stars rating" class="star-img">
-                      <p class="product-title">Premier Cropped Skinny Jean</p>
-                      <p class="product-price">$385.00</p>
-                  </div>
 
-                  <!-- Product 3 -->
-                  <div class="product-card">
-                    <div class="prd-img-wrap">
-                      <img src="images/3-pic.png" alt="Green Casual Shirt" class="prd-img">
-                      <div class="options flex">
-                        <button class="search">
-                          <img src="images/icon-search.png" alt="Search"/>
-                        </button>
-                        <button class="cart flex items-center justify-center">
-                          <img src="images/cart.png" alt="Cart" />
-                        </button>
-                      </div>
-                    </div>
-                      <img src="images/3.png" alt="3 out of 5 stars rating" class="star-img">
-                      <p class="product-title">Premier Cropped Skinny Jean</p>
-                      <p class="product-price">$385.00</p>
-                  </div>
-
-                  <!-- Product 4 -->
-                  <div class="product-card">
-                    <div class="prd-img-wrap">
-                      <img src="images/4-pic.png" alt="Blue Polo T-shirt" class="prd-img">
-                      <div class="options flex">
-                        <button class="search">
-                          <img src="images/icon-search.png" alt="Search"/>
-                        </button>
-                        <button class="cart flex items-center justify-center">
-                          <img src="images/cart.png" alt="Cart" />
-                        </button>
-                      </div>
-                    </div>
-                      <img src="images/4.png" alt="4 out of 5 stars rating" class="star-img">
-                      <p class="product-title">Premier Cropped Skinny Jean</p>
-                      <p class="product-price">$385.00</p>
-                  </div>
-
-                  <!-- Product 5 -->
-                  <div class="product-card">
-                    <div class="prd-img-wrap">
-                      <img src="images/5-pic.png" alt="White Cropped Jeans" class="prd-img">
-                      <div class="options flex">
-                        <button class="search">
-                          <img src="images/icon-search.png" alt="Search" />
-                        </button>
-                        <button class="cart flex items-center justify-center">
-                          <img src="images/cart.png" alt="Cart"/>
-                        </button>
-                      </div>
-                    </div>
-                      <img src="images/5.png" alt="5 out of 5 stars rating" class="star-img">
-                      <p class="product-title">Premier Cropped Skinny Jean</p>
-                      <p class="product-price">$385.00</p>
-                  </div>
-
-                  <!-- Product 6 -->
-                  <div class="product-card">
-                    <div class="prd-img-wrap">
-                      <img src="images/6-pic.png" alt="Grey Sneakers" class="prd-img">
-                      <div class="options flex">
-                        <button class="search">
-                          <img src="images/icon-search.png" alt="Search" />
-                        </button>
-                        <button class="cart flex items-center justify-center">
-                          <img src="images/cart.png" alt="Cart" />
-                        </button>
-                      </div>
-                    </div>
-                      <img src="images/6.png" alt="4 out of 5 stars rating" class="star-img">
-                      <p class="product-title">Premier Cropped Skinny Jean</p>
-                      <p class="product-price">$385.00</p>
-                  </div>
-
-                  <!-- Product 7 -->
-                  <div class="product-card">
-                    <div class="prd-img-wrap">
-                      <img src="images/prd-img7.png" alt="Checked Casual Shirt" class="prd-img">
-                      <div class="options flex">
-                        <button class="search">
-                          <img src="images/icon-search.png" alt="Search" />
-                        </button>
-                        <button class="cart flex items-center justify-center">
-                          <img src="images/cart.png" alt="Cart" />
-                        </button>
-                      </div>
-                    </div>
-                      <img src="images/7.png" alt="3 out of 5 stars rating" class="star-img">
-                      <p class="product-title">Premier Cropped Skinny Jean</p>
-                      <p class="product-price">$385.00</p>
-                  </div>
-
-                  <!-- Product 8 -->
-                  <div class="product-card">
-                    <div class="prd-img-wrap">
-                      <img src="images/8-pic.png" alt="Light Blue Scarf" class="prd-img">
-                      <div class="options flex">
-                        <button class="search">
-                          <img src="images/icon-search.png" alt="Search" />
-                        </button>
-                        <button class="cart flex items-center justify-center">
-                          <img src="images/cart.png" alt="Cart" />
-                        </button>
-                      </div>
-                    </div>
-                      <img src="images/8.png" alt="5 out of 5 stars rating" class="star-img">
-                      <p class="product-title">Premier Cropped Skinny Jean</p>
-                      <p class="product-price">$385.00</p>
-                  </div>
-          
-                  <!-- Product 9 -->
-                  <div class="product-card">
-                    <div class="prd-img-wrap">
-                      <img src="images/1-pic.png" alt="Blue Cropped Skinny Jeans" class="prd-img">
-                      <div class="options flex">
-                        <button class="search">
-                          <img src="images/icon-search.png" alt="Search" />
-                        </button>
-                        <button class="cart flex items-center justify-center">
-                          <img src="images/cart.png" alt="Cart" />
-                        </button>
-                      </div>
-                    </div>
-                      <img src="images/1.png" alt="4 out of 5 stars rating" class="star-img">
-                      <p class="product-title">Premier Cropped Skinny Jean</p>
-                      <p class="product-price">$385.00</p>
-                  </div>
-
-                  <!-- Product 10 -->
-                  <div class="product-card">
-                    <div class="prd-img-wrap">
-                      <img src="images/shirt.png" alt="Grey Hoodie Sweatshirt" class="prd-img">
-                      <div class="options flex">
-                        <button class="search">
-                          <img src="images/icon-search.png" alt="Search" />
-                        </button>
-                        <button class="cart flex items-center justify-center">
-                          <img src="images/cart.png" alt="Cart" />
-                        </button>
-                      </div>
-                    </div>
-                      <img src="images/2.png" alt="5 out of 5 stars rating" class="star-img">
-                      <p class="product-title">Premier Cropped Skinny Jean</p>
-                      <p class="product-price">$385.00</p>
-                  </div>
-
-                  <!-- Product 11 -->
-                  <div class="product-card">
-                    <div class="prd-img-wrap">
-                      <img src="images/3-pic.png" alt="Green Casual Shirt" class="prd-img">
-                      <div class="options flex">
-                        <button class="search">
-                          <img src="images/icon-search.png" alt="Search" />
-                        </button>
-                        <button class="cart flex items-center justify-center">
-                          <img src="images/cart.png" alt="Cart" />
-                        </button>
-                      </div>
-                    </div>
-                      <img src="images/3.png" alt="3 out of 5 stars rating" class="star-img">
-                      <p class="product-title">Premier Cropped Skinny Jean</p>
-                      <p class="product-price">$385.00</p>
-                  </div>
-
-                  <!-- Product 12 -->
-                  <div class="product-card">
-                    <div class="prd-img-wrap">
-                      <img src="images/4-pic.png" alt="Blue Polo T-shirt" class="prd-img">
-                      <div class="options flex">
-                        <button class="search">
-                          <img src="images/icon-search.png" alt="Search" />
-                        </button>
-                        <button class="cart flex items-center justify-center">
-                          <img src="images/cart.png" alt="Cart" />
-                        </button>
-                      </div>
-                    </div>
-                      <img src="images/4.png" alt="4 out of 5 stars rating" class="star-img">
-                      <p class="product-title">Premier Cropped Skinny Jean</p>
-                      <p class="product-price">$385.00</p>
-                    </div>
-                  </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+              <div class="prd-img-wrap">
+                <img
+                  src="images/shirt.png"
+                  alt="Grey Hoodie Sweatshirt"
+                  class="prd-img"
+                />
+                <div class="options flex">
+                  <button class="search">
+                    <img src="images/icon-search.png" alt="Search" />
+                  </button>
+                  <button class="cart flex items-center justify-center">
+                    <img src="images/cart.png" alt="Cart" />
+                  </button>
+                </div>
+              </div>
+              <img
+                src="images/2.png"
+                alt="5 out of 5 stars rating"
+                class="star-img"
+              />
+              <p class="product-title">Premier Cropped Skinny Jean</p>
+              <p class="product-price">$385.00</p>
             </div>
-        </section>
-  </div>
 
-  <!--num-section-->
-  <div class="color">
-    <section>
+            <!-- Product 3 -->
+            <div class="product-card">
+              <div class="prd-img-wrap">
+                <img
+                  src="images/3-pic.png"
+                  alt="Green Casual Shirt"
+                  class="prd-img"
+                />
+                <div class="options flex">
+                  <button class="search">
+                    <img src="images/icon-search.png" alt="Search" />
+                  </button>
+                  <button class="cart flex items-center justify-center">
+                    <img src="images/cart.png" alt="Cart" />
+                  </button>
+                </div>
+              </div>
+              <img
+                src="images/3.png"
+                alt="3 out of 5 stars rating"
+                class="star-img"
+              />
+              <p class="product-title">Premier Cropped Skinny Jean</p>
+              <p class="product-price">$385.00</p>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+              <div class="prd-img-wrap">
+                <img
+                  src="images/4-pic.png"
+                  alt="Blue Polo T-shirt"
+                  class="prd-img"
+                />
+                <div class="options flex">
+                  <button class="search">
+                    <img src="images/icon-search.png" alt="Search" />
+                  </button>
+                  <button class="cart flex items-center justify-center">
+                    <img src="images/cart.png" alt="Cart" />
+                  </button>
+                </div>
+              </div>
+              <img
+                src="images/4.png"
+                alt="4 out of 5 stars rating"
+                class="star-img"
+              />
+              <p class="product-title">Premier Cropped Skinny Jean</p>
+              <p class="product-price">$385.00</p>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+              <div class="prd-img-wrap">
+                <img
+                  src="images/5-pic.png"
+                  alt="White Cropped Jeans"
+                  class="prd-img"
+                />
+                <div class="options flex">
+                  <button class="search">
+                    <img src="images/icon-search.png" alt="Search" />
+                  </button>
+                  <button class="cart flex items-center justify-center">
+                    <img src="images/cart.png" alt="Cart" />
+                  </button>
+                </div>
+              </div>
+              <img
+                src="images/5.png"
+                alt="5 out of 5 stars rating"
+                class="star-img"
+              />
+              <p class="product-title">Premier Cropped Skinny Jean</p>
+              <p class="product-price">$385.00</p>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card">
+              <div class="prd-img-wrap">
+                <img
+                  src="images/6-pic.png"
+                  alt="Grey Sneakers"
+                  class="prd-img"
+                />
+                <div class="options flex">
+                  <button class="search">
+                    <img src="images/icon-search.png" alt="Search" />
+                  </button>
+                  <button class="cart flex items-center justify-center">
+                    <img src="images/cart.png" alt="Cart" />
+                  </button>
+                </div>
+              </div>
+              <img
+                src="images/6.png"
+                alt="4 out of 5 stars rating"
+                class="star-img"
+              />
+              <p class="product-title">Premier Cropped Skinny Jean</p>
+              <p class="product-price">$385.00</p>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card">
+              <div class="prd-img-wrap">
+                <img
+                  src="images/prd-img7.png"
+                  alt="Checked Casual Shirt"
+                  class="prd-img"
+                />
+                <div class="options flex">
+                  <button class="search">
+                    <img src="images/icon-search.png" alt="Search" />
+                  </button>
+                  <button class="cart flex items-center justify-center">
+                    <img src="images/cart.png" alt="Cart" />
+                  </button>
+                </div>
+              </div>
+              <img
+                src="images/7.png"
+                alt="3 out of 5 stars rating"
+                class="star-img"
+              />
+              <p class="product-title">Premier Cropped Skinny Jean</p>
+              <p class="product-price">$385.00</p>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card">
+              <div class="prd-img-wrap">
+                <img
+                  src="images/8-pic.png"
+                  alt="Light Blue Scarf"
+                  class="prd-img"
+                />
+                <div class="options flex">
+                  <button class="search">
+                    <img src="images/icon-search.png" alt="Search" />
+                  </button>
+                  <button class="cart flex items-center justify-center">
+                    <img src="images/cart.png" alt="Cart" />
+                  </button>
+                </div>
+              </div>
+              <img
+                src="images/8.png"
+                alt="5 out of 5 stars rating"
+                class="star-img"
+              />
+              <p class="product-title">Premier Cropped Skinny Jean</p>
+              <p class="product-price">$385.00</p>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card">
+              <div class="prd-img-wrap">
+                <img
+                  src="images/1-pic.png"
+                  alt="Blue Cropped Skinny Jeans"
+                  class="prd-img"
+                />
+                <div class="options flex">
+                  <button class="search">
+                    <img src="images/icon-search.png" alt="Search" />
+                  </button>
+                  <button class="cart flex items-center justify-center">
+                    <img src="images/cart.png" alt="Cart" />
+                  </button>
+                </div>
+              </div>
+              <img
+                src="images/1.png"
+                alt="4 out of 5 stars rating"
+                class="star-img"
+              />
+              <p class="product-title">Premier Cropped Skinny Jean</p>
+              <p class="product-price">$385.00</p>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card">
+              <div class="prd-img-wrap">
+                <img
+                  src="images/shirt.png"
+                  alt="Grey Hoodie Sweatshirt"
+                  class="prd-img"
+                />
+                <div class="options flex">
+                  <button class="search">
+                    <img src="images/icon-search.png" alt="Search" />
+                  </button>
+                  <button class="cart flex items-center justify-center">
+                    <img src="images/cart.png" alt="Cart" />
+                  </button>
+                </div>
+              </div>
+              <img
+                src="images/2.png"
+                alt="5 out of 5 stars rating"
+                class="star-img"
+              />
+              <p class="product-title">Premier Cropped Skinny Jean</p>
+              <p class="product-price">$385.00</p>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-card">
+              <div class="prd-img-wrap">
+                <img
+                  src="images/3-pic.png"
+                  alt="Green Casual Shirt"
+                  class="prd-img"
+                />
+                <div class="options flex">
+                  <button class="search">
+                    <img src="images/icon-search.png" alt="Search" />
+                  </button>
+                  <button class="cart flex items-center justify-center">
+                    <img src="images/cart.png" alt="Cart" />
+                  </button>
+                </div>
+              </div>
+              <img
+                src="images/3.png"
+                alt="3 out of 5 stars rating"
+                class="star-img"
+              />
+              <p class="product-title">Premier Cropped Skinny Jean</p>
+              <p class="product-price">$385.00</p>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-card">
+              <div class="prd-img-wrap">
+                <img
+                  src="images/4-pic.png"
+                  alt="Blue Polo T-shirt"
+                  class="prd-img"
+                />
+                <div class="options flex">
+                  <button class="search">
+                    <img src="images/icon-search.png" alt="Search" />
+                  </button>
+                  <button class="cart flex items-center justify-center">
+                    <img src="images/cart.png" alt="Cart" />
+                  </button>
+                </div>
+              </div>
+              <img
+                src="images/4.png"
+                alt="4 out of 5 stars rating"
+                class="star-img"
+              />
+              <p class="product-title">Premier Cropped Skinny Jean</p>
+              <p class="product-price">$385.00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--num-section-->
+    <div class="color">
+      <section>
         <div class="container">
-            <div class="pagination flex items-center justify-center">
-                <span class="left-arrow"><img src="images/left-arrow-num-section.png" alt="left-arrow"></span>
-                <span class="bold justify-center items-center flex">1</span>
-                <span class="num-color">2</span>
-                <span class="num-color">3</span>
-                <span class="num-color">4</span>
-                <span class="num-color">5</span>
-                <span class="right-arrow"><img src="images/right-arrow-num-section.png" alt="right-arrow"></span>
-            </div>
+          <div class="pagination flex items-center justify-center">
+            <span class="left-arrow"
+              ><img src="images/left-arrow-num-section.png" alt="left-arrow"
+            /></span>
+            <span class="bold justify-center items-center flex">1</span>
+            <span class="num-color">2</span>
+            <span class="num-color">3</span>
+            <span class="num-color">4</span>
+            <span class="num-color">5</span>
+            <span class="right-arrow"
+              ><img src="images/right-arrow-num-section.png" alt="right-arrow"
+            /></span>
+          </div>
         </div>
-    </section>
-  </div>
+      </section>
+    </div>
 
-  <!--Footer-->
-  <div class="grey">
-    <footer>
-      <div class="container">
-        <!-- Arrow button -->
-        <div class="footer-arrow flex justify-center">
-          <span class="Arrow flex justify-center items-center">
-            <img src="images/Arrow.png" alt="Arrow">
-          </span>
-        </div>
+    <!--Footer-->
+    <div class="grey">
+      <footer>
+        <div class="container">
+          <!-- Arrow button -->
+          <div class="footer-arrow flex justify-center">
+            <span class="Arrow flex justify-center items-center">
+              <img src="images/Arrow.png" alt="Arrow" />
+            </span>
+          </div>
           <div class="footer-top flex wrap">
             <!-- About -->
             <div class="space">
               <h3>About</h3>
               <span class="line"></span>
               <p>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tempor incididunt.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat tempor incididunt.
               </p>
             </div>
 
@@ -397,18 +520,24 @@
               <nav>
                 <ul>
                   <li class="contact-items flex items-center">
-                    <img src="images/location.png" alt="Location icon">
-                    <a href="https://www.google.com/maps?q=7895+Piermont+Dr+NE+Albuquerque,+NM+198866" target="_blank">
-                      7895 Piermont Dr NE Albuquerque, NM 198866, United States of US.
+                    <img src="images/location.png" alt="Location icon" />
+                    <a
+                      href="https://www.google.com/maps?q=7895+Piermont+Dr+NE+Albuquerque,+NM+198866"
+                      target="_blank"
+                    >
+                      7895 Piermont Dr NE Albuquerque, NM 198866, United States
+                      of US.
                     </a>
                   </li>
                   <li class="contact-items flex items-center">
-                    <img src="images/phone-call.png" alt="Phone icon">
+                    <img src="images/phone-call.png" alt="Phone icon" />
                     <a href="tel:+01234567890">+0 123 456 7890</a>
                   </li>
                   <li class="contact-items flex items-center">
-                    <img src="images/envelope.png" alt="Email icon">
-                    <a href="mailto:john.smith@domain.com">john.smith@domain.com</a>
+                    <img src="images/envelope.png" alt="Email icon" />
+                    <a href="mailto:john.smith@domain.com"
+                      >john.smith@domain.com</a
+                    >
                   </li>
                 </ul>
               </nav>
@@ -416,10 +545,18 @@
               <!--Social Icons-->
               <div class="social-icons">
                 <nav>
-                  <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook-logo"></a>
-                  <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter-logo"></a>
-                  <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="Linkedin-logo"></a>
-                  <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram-logo"></a>
+                  <a href="https://www.facebook.com" target="_blank"
+                    ><img src="images/facebook.png" alt="Facebook-logo"
+                  /></a>
+                  <a href="https://www.twitter.com" target="_blank"
+                    ><img src="images/twitter.png" alt="Twitter-logo"
+                  /></a>
+                  <a href="https://www.linkedin.com" target="_blank"
+                    ><img src="images/linkedin.png" alt="Linkedin-logo"
+                  /></a>
+                  <a href="https://www.instagram.com" target="_blank"
+                    ><img src="images/instagram.png" alt="Instagram-logo"
+                  /></a>
                 </nav>
               </div>
             </div>
@@ -428,18 +565,18 @@
           <!-- Bottom -->
           <div class="footer-bottom flex items-center wrap">
             <span class="border"></span>
-            <img src="images/footer-logo.png" alt="Footer-logo">
+            <img src="images/footer-logo.png" alt="Footer-logo" />
             <p>&copy; e-commerce 2022. All Rights Reserved</p>
             <div class="payment-methods flex items-center">
-              <img src="images/G-Pay.png" alt="GOOGLE Pay">
-              <img src="images/visa.png" alt="Visa">
-              <img src="images/pal-pal.png" alt="PayPal">
-              <img src="images/master-card.png" alt="MasterCard">
-              <img src="images/IPhone-logo.png" alt="ApplePay">
+              <img src="images/G-Pay.png" alt="GOOGLE Pay" />
+              <img src="images/visa.png" alt="Visa" />
+              <img src="images/pal-pal.png" alt="PayPal" />
+              <img src="images/master-card.png" alt="MasterCard" />
+              <img src="images/IPhone-logo.png" alt="ApplePay" />
             </div>
           </div>
-      </div>
-    </footer>
-  </div>
-</body>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

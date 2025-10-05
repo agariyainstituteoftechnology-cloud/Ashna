@@ -1104,7 +1104,8 @@ body{
   justify-content: center;
 }
 .thumbs img{
-  width: 100px;
+  width: 100%;
+  max-width: 100px;
 }
 .product-images{
   display: flex;
@@ -1120,6 +1121,7 @@ body{
     width: 100%;
     max-width: 500px;
   }
+  /*boy section end*/
 }
 
 @media(max-width: 992px){  /*normal tablets screen*/
@@ -1165,7 +1167,19 @@ body{
 /*boy section*/
 .thumbs{
   gap: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+.thumbs img{
+  width: 100%;
+  max-width: 100px;
+}
+.product-images{
+  display: flex;
+  flex-direction: column;
+}
+/*boy section end*/
 
 .review-item p{
   font-size: 14px;
@@ -1209,9 +1223,11 @@ body{
   .fashion{
     width: calc((100% / 1) - 15px);
   }
+  /*boy section*/
   .btn{
     margin-bottom: 10px;
   }
+  /*boy section end*/
   .review-time{
     font-size: 15px;
   }
@@ -1235,6 +1251,7 @@ body{
 .title , .price{
   font-size: 29px;
 }
+/*boy section end*/
 }
 @media(max-width: 620px){  
 .thumbs{
@@ -1287,6 +1304,7 @@ body{
 .buy-now{
   padding: 12px 25px;
 }
+/*boy section end*/
 @media(max-width: 480px){  
   .pagination {
     padding: 45px;

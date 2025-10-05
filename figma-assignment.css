@@ -1223,11 +1223,7 @@ body{
   .fashion{
     width: calc((100% / 1) - 15px);
   }
-  /*boy section*/
-  .btn{
-    margin-bottom: 10px;
-  }
-  /*boy section end*/
+  
   .review-time{
     font-size: 15px;
   }
@@ -1242,25 +1238,28 @@ body{
   flex-direction: row;
 }
 .thumbs img{
-  width: 84px;
+  width: 100%;
+  max-width: 75px;
 }
 .product-images{
   display: flex;
   flex-direction: column;
 }
-.title , .price{
-  font-size: 29px;
+.btn{
+  margin-bottom: 10px;
 }
 /*boy section end*/
+
 }
 @media(max-width: 620px){  
 .thumbs{
-  gap: 10px;
+  gap: 6px;
   display: flex;
   flex-direction: row;
 }
 .thumbs img{
-  width: 68px;
+  width: 100%;
+  max-width: 65px;
 }
 .product-images{
   display: flex;
@@ -1290,19 +1289,7 @@ body{
   width: 14px;
   height: 14px;
 }
-.terms label{
-  font-size: 14px;
-}
-.quantity{
-  padding: 7px 8px;
-}
-}
-.add-cart{
-  padding: 10px 28px;
-  font-size: 15px;
-}
-.buy-now{
-  padding: 12px 25px;
+
 }
 /*boy section end*/
 @media(max-width: 480px){  
@@ -1311,4 +1298,20 @@ body{
     gap: 28px;
   }
 
+  .thumbs{
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.thumbs img{
+  width: 100%;
+  max-width: 55px;
+}
+.product-images{
+  display: flex;
+  flex-direction: column;
+}
+.product-detail{
+  gap: 12px;
+}
 }

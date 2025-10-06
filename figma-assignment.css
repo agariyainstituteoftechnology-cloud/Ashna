@@ -333,6 +333,9 @@ body {
   margin-right: 5px;
   cursor: pointer;
 }
+.options .search img{
+  width: 18px;
+}
 .options .cart{
   height: 32px;
   width: 32px;
@@ -340,6 +343,7 @@ body {
   background: var(--themecolor);
   border: 2px solid #fff;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 .prd-img{
   width: 100%;
@@ -359,7 +363,7 @@ body {
 .product-price {
   font-size: 24px;
   font-weight: 600;
-  color: #4581FB;
+  color: var(--themecolor);
 }
 
 /*Flex Fashion layout Css*/
@@ -1086,10 +1090,7 @@ body {
   .meta span {
     font-size: 14px;
   }
-  .left-col p{
-    font-size: 15px;
-    margin-bottom: 31px;
-  }
+
   .review-text{
     font-size: 12px;
     line-height: 21px;
@@ -1106,6 +1107,7 @@ body {
   }
   .product-detail {
     flex-wrap: wrap;
+    gap: 19px;
   }
   .thumbs img {
     max-width: 60px;
@@ -1123,6 +1125,9 @@ body {
   }
   .hero-image {
     position: relative;
+  }
+  .btn{
+    margin-bottom: 40px;
   }
   .cat-grid {
     grid-auto-rows: 200px;
@@ -1184,6 +1189,7 @@ body {
   }
   .layout {
     flex-wrap: wrap;
+    margin-top: 0;
   }
   .fashion {
     width: 100%;
@@ -1191,12 +1197,15 @@ body {
   .btn {
     margin-bottom: 10px;
   }
-  .review-time{
-    font-size: 15px;
+  .desc-reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
-  .review-item p{
-  margin-top: 10px;
-}
+  .description, .reviews{
+    width: 100%;
+  }
+  
 }
 
 @media(max-width: 620px){ 

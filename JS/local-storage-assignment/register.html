@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <h2>Register Page</h2>
+    <form id="register-form" method="post">
+      <div id="firstname-wrap">
+        <label>Firstname</label>
+        <input type="text" name="firstname" id="firstname" />
+      </div>
+      <div id="lastname-wrap">
+        <label>Lastname</label>
+        <input type="text" name="lastname" id="lastname" />
+      </div>
+      <div id="email-wrap">
+        <label>Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div id="password-wrap">
+        <label>Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <input type="submit" value="Submit" id="register-submit" />
+    </form>
+
+    <script>
+      document
+        .getElementById("register-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          let fname = document.getElementById("firstname").value;
+          let lname = document.getElementById("lastname").value;
+          let email = document.getElementById("email").value;
+          let pass = document.getElementById("password").value;
+
+          if (fname == "") {
+            document.getElementById("firstname-wrap").innerHTML +=
+              "<span>Firstname is required.</span>";
+          }
+          if (lname == "") {
+            document.getElementById("lastname-wrap").innerHTML +=
+              "<span>Lastname is required.</span>";
+          }
+          if (email == "") {
+            document.getElementById("email-wrap").innerHTML +=
+              "<span>Email is required.</span>";
+          }
+          if (pass == "") {
+            document.getElementById("password-wrap").innerHTML +=
+              "<span>Password is required.</span>";
+          }
+          if (fname != "" &&
+           lname != "" &&
+            email != "" &&
+             pass != ""
+            ) {
+            localStorage.setItem("firstname", fname);
+            localStorage.setItem("lastname", lname);
+            localStorage.setItem("email", email);
+            localStorage.setItem("password", pass);
+            localStorage.setItem("balance", 50000);
+
+            window.location.href = "login.html";
+          }
+        });
+    </script>
+  </body>
+</html>

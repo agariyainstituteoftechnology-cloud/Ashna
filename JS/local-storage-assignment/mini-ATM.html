@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+  </head>
+  <body>
+    <h2>ATM Machine</h2>
+
+    <script>
+      /*let balance = parseInt(localStorage.getItem("balance")) || 50000;*/
+      let balance = 50000
+      console.log("Available Balance: Rs " + balance);
+
+      do {
+        let amount = +prompt("Enter amount to withdraw (multiple of 500):");
+
+        if(isNaN(amount) || amount <= 0 || amount % 500 != 0){
+          console.log("Please enter valid amount (multiple of 500)");
+        } 
+        else if(amount > balance){
+          console.log("Insufficient Balance. You have Rs " + balance);
+        } 
+        else {
+          let n5000 = Math.floor(amount / 5000);
+          amount = amount % 5000;
+
+          let n1000 = Math.floor(amount / 1000);
+          amount = amount % 1000;
+
+          let n500 = Math.floor(amount / 500);
+          amount = amount % 500;
+
+          balance -= (n5000*5000 + n1000*1000 + n500*500);
+          localStorage.setItem("balance", balance);
+
+          console.log(" Transaction Successful!");
+          if(n5000>0) console.log("5000 x " + n5000);
+          if(n1000>0) console.log("1000 x " + n1000);
+          if(n500>0) console.log("500 x " + n500);
+          console.log(" New Balance: Rs " + balance);
+        }
+
+        var again = prompt("Do you want another transaction? (yes/no)").toLowerCase();
+      } while(again == "yes");
+
+      console.log("Thank you for using our ATM!");
+    </script>
+  </body>
+</html>

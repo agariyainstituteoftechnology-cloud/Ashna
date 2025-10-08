@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Login Page</h1>
+    <form id="login-form">
+      <div id="email-wrap">
+        <label>Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div id="password-wrap">
+        <label>Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+    <script>
+      addEventListener("submit", function (e) {
+        e.preventDefault();
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        if (email == "") {
+          document.getElementById("email-wrap").innerHTML +=
+            "<span>Email is required.</span>";
+        }
+        if (password == "") {
+          document.getElementById("password-wrap").innerHTML +=
+            "<span>Password is required.</span>";
+        }
+        if (email != "" && password != "") {
+          let savedEmail = localStorage.getItem("email");
+          let savedPass = localStorage.getItem("password");
+          if (savedEmail == email && savedPass == password) {
+            window.location.href = "welcome.html";
+          } else {
+            document.getElementById("login-form").innerHTML +=
+              "<span>Invalid email or password.</span>";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
+

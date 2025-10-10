@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1 id="heading">Welcome: </h1>
+    <form id="register-form" method="post">
+        <div id="firstname-wrap">
+            <label>Firstname</label>
+            <input type="text" name="firstname" id="firstname" />
+        </div>
+        <div id="lastname-wrap">
+            <label>Lastname</label>
+            <input type="text" name="lastname" id="lastname" />
+        </div>
+        <div id="email-wrap">
+            <label>Email</label>
+            <input type="email" name="email" id="email" />
+        </div>
+        <div id="password-wrap">
+            <label>Password</label>
+            <input type="password" name="password" id="password" />
+        </div>
+        <input type="submit" value="Submit" id="register-submit">
+    </form>
+    <script>
+        const arr = [];
+
+        addEventListener("submit", function(e){
+            e.preventDefault();
+
+            let firstname = document.getElementById("firstname").value;
+            let lastname = document.getElementById("lastname").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            arr.push(firstname, lastname, email, password);
+            console.log(arr);
+            
+        })
+            
+            
+        </script>
+</body>
+</html>
